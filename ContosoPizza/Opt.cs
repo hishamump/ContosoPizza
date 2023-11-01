@@ -58,8 +58,15 @@ namespace ContosoPizza
             }
         }
 
-        public static void RemoveProducts() { }
-        public static void RemoveAllProducts() { }
-
+        public static void UpdateProducts() {
+            using ContosoPizzaContext context = new();
+            var vegg = context.Products
+                              .Where(p => p.Name == "Veggie Special Pizza").FirstOrDefault();
+            if ( vegg != null )
+            {
+                vegg.Price = 10.99m;
+                context.SaveChanges();
+            }
+        }
     }
 }

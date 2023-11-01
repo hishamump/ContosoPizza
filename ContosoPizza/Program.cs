@@ -4,6 +4,9 @@ using ContosoPizza;
 
 //Opt.AddProducts();
 Opt.QueryDataFluentAPI();
+
+Opt.UpdateProducts();
+
 Opt.QueryDataLinqSyntax();
 
 //Console.WriteLine("Hello, World!");
