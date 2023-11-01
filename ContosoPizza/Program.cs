@@ -1,8 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using ContosoPizza.Models;
+using ContosoPizza;
 
-Console.WriteLine("Hello, World!");
 
-Customer x = new Customer();
+Opt.AddProducts();
 
-Console.WriteLine($"x = -{x.FirstName.Length}-");
+//Console.WriteLine("Hello, World!");
+
+//Customer x = new Customer();
+
+//Console.WriteLine($"x = -{x.FirstName.Length}-");
