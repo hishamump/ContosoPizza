@@ -2,7 +2,9 @@
 using ContosoPizza;
 
 
-Opt.AddProducts();
+//Opt.AddProducts();
+Opt.QueryDataFluentAPI();
+Opt.QueryDataLinqSyntax();
 
 //Console.WriteLine("Hello, World!");
 
