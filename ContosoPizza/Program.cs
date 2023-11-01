@@ -2,10 +2,15 @@
 using ContosoPizza;
 
 
-//Opt.AddProducts();
+Opt.AddProducts();
+
 Opt.QueryDataFluentAPI();
 
 Opt.UpdateProducts();
+
+Opt.QueryDataLinqSyntax();
+
+Opt.RemoveProduct();
 
 Opt.QueryDataLinqSyntax();
 
