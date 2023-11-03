@@ -1,3 +1,6 @@
+using ContosoRazor.Data;
+using ContosoRazor.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -19,6 +22,12 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+using ContosoPizzaContext context = new();
+foreach (Customer c in context.Customers)
+{
+    Console.WriteLine($"Name: {c.FirstLast}");
+}
 
 app.MapRazorPages();
 
