@@ -25,11 +25,11 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-using ContosoPizzaContext context = new();
-foreach (Customer c in context.Customers)
-{
-    Console.WriteLine($"Name: {c.FirstLast}");
-}
+//using ContosoPizzaContext context = new();
+//foreach (Customer c in context.Customers)
+//{
+//    Console.WriteLine($"Name: {c.FirstLast}");
+//}
 
 app.MapRazorPages();
 
